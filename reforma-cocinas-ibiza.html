@@ -1,1 +1,151 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reforma de Cocinas en Ibiza | Diseño y Construcción · TuReformaIbiza</title>
+<meta name="description" content="Reforma de cocinas en Ibiza: diseño, mobiliario, encimeras, fontanería y electricidad. Presupuesto gratis. +34 677 80 75 11">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#e63946;--dark:#0d0f12;--gray:#6b7280;--light:#f8f8f6;--border:#e5e7eb;--wa:#25D366;}
+body{font-family:'Poppins',sans-serif;background:#fff;color:var(--dark);}
+a{color:var(--red);}
+nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.nav-logo{font-size:18px;font-weight:800;color:var(--dark);text-decoration:none;}
+.nav-logo span{color:var(--red);}
+.nav-links{display:flex;gap:24px;}
+.nav-links a{color:#444;text-decoration:none;font-size:13px;font-weight:500;}
+.nav-links a:hover{color:var(--red);}
+.nav-wa{background:var(--wa);color:white;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;}
+header{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),linear-gradient(135deg,#0d0f12 0%,#1a1c1f 100%);padding:90px 32px;text-align:center;color:white;position:relative;overflow:hidden;}
+header::before{content:'🍳';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-size:200px;opacity:.06;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:white;padding:6px 16px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;}
+header h1{font-size:42px;font-weight:800;margin-bottom:14px;letter-spacing:-.5px;}
+header p{font-size:17px;opacity:.8;max-width:600px;margin:0 auto 28px;font-weight:300;line-height:1.7;}
+.btn{display:inline-flex;align-items:center;gap:8px;margin:6px;padding:14px 28px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;}
+.btn-red{background:var(--red);color:white;}
+.btn-wa{background:var(--wa);color:white;}
+.btn-outline{border:1.5px solid rgba(255,255,255,.5);color:white;}
+.back-link{display:block;text-align:center;padding:12px;background:var(--dark);color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;border-bottom:2px solid var(--red);}
+.intro{max-width:860px;margin:60px auto;padding:0 24px;}
+.intro h2{font-size:28px;font-weight:700;color:var(--dark);margin-bottom:16px;}
+.intro p{font-size:16px;color:var(--gray);line-height:1.8;margin-bottom:16px;}
+.intro strong{color:var(--dark);font-weight:600;}
+.section-title{font-size:30px;font-weight:800;text-align:center;margin:60px 0 10px;letter-spacing:-.5px;}
+.section-sub{text-align:center;color:var(--gray);max-width:600px;margin:0 auto 36px;padding:0 20px;font-size:15px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1100px;margin:auto;padding:0 24px;}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.07);border-top:4px solid var(--red);transition:transform .3s,box-shadow .3s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.12);}
+.card-content{padding:24px;}
+.card-icon{font-size:32px;margin-bottom:12px;}
+.card h3{font-size:17px;font-weight:700;color:var(--dark);margin-bottom:8px;}
+.card p{font-size:14px;color:var(--gray);line-height:1.6;}
+.card-tag{display:inline-block;margin-top:12px;background:#fff0f0;color:var(--red);font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:20px;}
+.zonas{max-width:860px;margin:60px auto;padding:0 24px;text-align:center;}
+.zonas h2{font-size:24px;font-weight:700;margin-bottom:8px;}
+.zonas p{color:var(--gray);margin-bottom:20px;}
+.zonas-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.zona-pill{background:white;border:1.5px solid var(--red);color:var(--red);padding:7px 16px;border-radius:30px;font-size:13px;font-weight:500;}
+.cta-section{background:var(--red);padding:70px 24px;text-align:center;margin-top:60px;}
+.cta-section h2{font-size:36px;font-weight:800;color:white;margin-bottom:10px;}
+.cta-section p{color:rgba(255,255,255,.85);font-size:16px;margin-bottom:32px;}
+footer{background:var(--dark);padding:32px 24px;text-align:center;border-top:3px solid var(--red);}
+footer p{color:rgba(255,255,255,.4);font-size:13px;margin-bottom:8px;}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 8px;font-size:13px;}
+.wa-float{position:fixed;bottom:24px;right:24px;background:var(--wa);color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;text-decoration:none;box-shadow:0 6px 20px rgba(37,211,102,.45);z-index:999;}
+@media(max-width:768px){
+  nav{padding:0 16px;}
+  .nav-links{display:none;}
+  header{padding:60px 20px;}
+  header h1{font-size:28px;}
+  .btn{padding:12px 20px;font-size:13px;}
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="./index.html">← Volver a TuReformaIbiza · Todos los servicios</a>
+<nav>
+  <a class="nav-logo" href="./index.html">Tu<span>Reforma</span>Ibiza</a>
+  <div class="nav-links">
+    <a href="./reforma-banos-ibiza.html">Baños</a>
+    <a href="./reforma-cocinas-ibiza.html">Cocinas</a>
+    <a href="./fontanero-ibiza.html">Fontanería</a>
+    <a href="./electricista-ibiza.html">Electricidad</a>
+  </div>
+  <a class="nav-wa" href="https://wa.me/34677807511">💬 WhatsApp</a>
+</nav>
+<header>
+  <div class="hero-badge">🔴 Disponible 24h · Ibiza</div>
+  <h1>Reforma de Cocinas en Ibiza</h1>
+  <p>Reforma de cocinas en Ibiza: diseño, mobiliario, encimeras, fontanería y electricidad. Presupuesto gratis. +34 677 80 75 11</p>
+  <div>
+    <a class="btn btn-red" href="tel:+34 677 80 75 11">📞 Llamar ahora</a>
+    <a class="btn btn-wa" href="https://wa.me/34677807511?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20reformas%20en%20Ibiza">💬 WhatsApp</a>
+  </div>
+</header>
+<div class="intro">
+  <h2>Reforma integral de cocinas en Ibiza</h2>
+  <p>En <strong>TuReformaIbiza</strong> diseñamos y reformamos cocinas completas en toda Ibiza. Desde el diseño inicial hasta los acabados finales, nos encargamos de todo para que tu cocina sea exactamente como la imaginas.</p>
+  <p>Trabajamos con los mejores materiales y fabricantes. <strong>Fontanería, electricidad, mobiliario y electrodomésticos</strong> — todo incluido en un solo presupuesto sin sorpresas.</p>
+</div>
+<div class="section-title">Nuestros servicios</div>
+<div class="section-sub">Todo lo que necesitas, gestionado por un solo equipo local en Ibiza.</div>
+<div class="grid"><div class="card">
+<div class="card-content">
+<div class="card-icon">🍳</div>
+<h3>Reforma integral de cocina</h3>
+<p>Diseño, demolición, mobiliario, encimera, fontanería y electricidad. Todo incluido.</p>
+<span class="card-tag">Llave en mano</span>
+</div></div><div class="card">
+<div class="card-content">
+<div class="card-icon">🪵</div>
+<h3>Mobiliario y armarios</h3>
+<p>Instalación de muebles de cocina a medida o de catálogo. Acabados en madera, lacado o PVC.</p>
+<span class="card-tag">A medida</span>
+</div></div><div class="card">
+<div class="card-content">
+<div class="card-icon">🔲</div>
+<h3>Encimeras</h3>
+<p>Silestone, granito, madera y compacto. Instalación con cortes y acabados profesionales.</p>
+<span class="card-tag">Premium</span>
+</div></div><div class="card">
+<div class="card-content">
+<div class="card-icon">🚰</div>
+<h3>Fontanería de cocina</h3>
+<p>Fregadero, grifo, lavavajillas, lavadora y toda la instalación de agua de la cocina.</p>
+<span class="card-tag">Garantizado</span>
+</div></div><div class="card">
+<div class="card-content">
+<div class="card-icon">⚡</div>
+<h3>Electricidad e iluminación</h3>
+<p>Circuitos para electrodomésticos, iluminación LED bajo mueble y tomas de corriente.</p>
+<span class="card-tag">Certificado</span>
+</div></div><div class="card">
+<div class="card-content">
+<div class="card-icon">🧱</div>
+<h3>Alicatado y suelos</h3>
+<p>Azulejos de cocina, pavimentos y revestimientos. Gran variedad de acabados y estilos.</p>
+<span class="card-tag">Premium</span>
+</div></div></div>
+<div class="zonas">
+  <h2>Zonas donde trabajamos</h2>
+  <p>Servicio disponible en toda Ibiza:</p>
+  <div class="zonas-list"><span class="zona-pill">Ibiza Centro</span><span class="zona-pill">San Antonio</span><span class="zona-pill">Santa Eulalia</span><span class="zona-pill">San José</span><span class="zona-pill">San Juan</span><span class="zona-pill">Jesús</span><span class="zona-pill">Talamanca</span><span class="zona-pill">Playa d'en Bossa</span><span class="zona-pill">Es Cubells</span><span class="zona-pill">Cala Llonga</span></div>
+</div>
+<div class="cta-section">
+  <h2>¿Necesitas presupuesto?</h2>
+  <p>Respuesta inmediata. Sin compromiso. Presupuesto gratuito en 24h.</p>
+  <a class="btn btn-outline" href="https://wa.me/34677807511?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20reformas%20en%20Ibiza">💬 WhatsApp · Presupuesto Gratis</a>
+  <a class="btn btn-outline" href="tel:+34 677 80 75 11">📞 +34 677 80 75 11</a>
+</div>
+<footer>
+  <p><strong style="color:white;">TuReformaIbiza</strong></p>
+  <p>tureformaibiza.com · +34 677 80 75 11 · tureformaibiza@gmail.com</p>
+  <p><a href="./index.html">Inicio</a> <a href="./reforma-banos-ibiza.html">Baños</a> <a href="./reforma-cocinas-ibiza.html">Cocinas</a> <a href="./fontanero-ibiza.html">Fontanería</a> <a href="./electricista-ibiza.html">Electricidad</a></p>
+  <p style="margin-top:12px;">© 2026 TuReformaIbiza.com</p>
+</footer>
+<a class="wa-float" href="https://wa.me/34677807511">💬</a>
+</body>
+</html>
