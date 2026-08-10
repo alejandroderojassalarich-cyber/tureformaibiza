@@ -429,6 +429,24 @@ footer{
   @media(max-width:768px){
   nav{padding:0 16px;height:60px;}
   .nav-links{display:none;}
+.nav-menu-btn{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  padding:8px;
+}
+.nav-menu-btn span{
+  width:24px;height:2px;
+  background:var(--dark);display:block;
+}
+.nav-links.open{
+  display:flex;flex-direction:column;
+  position:fixed;top:60px;left:0;right:0;
+  background:white;padding:20px;
+  border-bottom:2px solid var(--red);
+  z-index:300;gap:16px;
+}
   .nav-right{gap:8px;}
   .nav-phone{display:none;}
   .nav-urg{padding:8px 14px;font-size:12px;}
@@ -477,6 +495,9 @@ footer{
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Tu<span>Reforma</span>Ibiza</div>
+  <div class="nav-menu-btn" onclick="this.nextElementSibling.classList.toggle('open')">
+  <span></span><span></span><span></span>
+</div>
   <div class="nav-links">
     <a href="#">Emergencias</a>
 <a href="./reforma-banos-ibiza.html">Baños</a> 
